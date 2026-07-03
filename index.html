@@ -1340,24 +1340,29 @@ function switchTab(id){
 
 // ===================== DỮ LIỆU CÁN BỘ (từ Danh sách BIDV) =====================
 const STAFF = [
-  { name:"Nguyễn Thị Thanh Nga", phone:"0986848363", role:"Phó Trưởng phòng Khách hàng cá nhân", team:"Phòng Khách hàng Cá nhân", email:"ngantt25@bidv.com.vn" },
   { name:"Nguyễn Thị Phương",    phone:"0902022526", role:"Phó Trưởng phòng Khách hàng cá nhân", team:"Phòng Khách hàng Cá nhân", email:"phuongnt27@bidv.com.vn" },
   { name:"Nguyễn Công Thành",    phone:"0949496666", role:"Phó Trưởng phòng Khách hàng cá nhân", team:"Phòng Khách hàng Cá nhân", email:"thanhnc6@bidv.com.vn" },
+  { name:"Dương Kiều Huyền",     phone:"0912317926", role:"Phó Trưởng phòng Khách hàng cá nhân", team:"Phòng Khách hàng Cá nhân", email:"huyendk@bidv.com.vn" },
   { name:"Ninh Thu Hương",       phone:"0975466565", role:"Chuyên viên Khách hàng ưu tiên cấp 3", team:"Phòng Khách hàng Cá nhân", email:"huongnt74@bidv.com.vn" },
   { name:"Lê Thùy Linh",         phone:"0384106068", role:"Chuyên viên Khách hàng cá nhân cấp 2", team:"Phòng Khách hàng Cá nhân", email:"linhlt14@bidv.com.vn" },
+  { name:"Trần Thị Thủy",        phone:"0984104830", role:"Chuyên viên Khách hàng ưu tiên cấp 2", team:"Phòng Khách hàng Cá nhân", email:"thuytt42@bidv.com.vn" },
+  { name:"Nguyễn Thị Thảo",      phone:"0977467588", role:"Chuyên viên Khách hàng cá nhân cấp 2", team:"Phòng Khách hàng Cá nhân", email:"thaont63@bidv.com.vn" },
 
-  { name:"Bùi Phương Anh",       phone:"0986312379", role:"Phó Giám đốc PGD phụ trách kinh doanh", team:"PGD West Lake", email:"anhbp1@bidv.com.vn" },
-  { name:"Dương Thanh Tùng",     phone:"0969667388", role:"Phó Giám đốc PGD phụ trách kinh doanh", team:"PGD West Lake", email:"tungdt4@bidv.com.vn" },
+  { name:"Bùi Phương Anh",       phone:"0986312379", role:"Phó Giám đốc Phòng Giao dịch phụ trách kinh doanh", team:"PGD West Lake", email:"anhbp1@bidv.com.vn" },
+  { name:"Dương Thanh Tùng",     phone:"0969667388", role:"Phó Giám đốc Phòng Giao dịch phụ trách kinh doanh", team:"PGD West Lake", email:"tungdt4@bidv.com.vn" },
   { name:"Nguyễn Văn Thắng",     phone:"0982505275", role:"Chuyên viên khách hàng hỗn hợp cấp 1", team:"PGD West Lake", email:"thangnv18@bidv.com.vn" },
+  { name:"Bùi Nhật Tân",         phone:"0852817246", role:"Chuyên viên Khách hàng cá nhân cấp 1", team:"PGD West Lake", email:"tanbn@bidv.com.vn" },
 
-  { name:"Trần Văn Long",        phone:"0912760607", role:"Phó Giám đốc PGD phụ trách kinh doanh", team:"PGD Hào Nam", email:"longtv@bidv.com.vn" },
-  { name:"Nguyễn Thanh Hải",     phone:"0916949799", role:"Chuyên viên Khách hàng cá nhân C1", team:"PGD Hào Nam", email:"haint17@bidv.com.vn" },
+  { name:"Trần Văn Long",        phone:"0912760607", role:"Phó Giám đốc Phòng Giao dịch phụ trách kinh doanh", team:"PGD Hào Nam", email:"longtv@bidv.com.vn" },
+  { name:"Nguyễn Thanh Hải",     phone:"0916949799", role:"CV KHCN C1", team:"PGD Hào Nam", email:"haint17@bidv.com.vn" },
   { name:"Tạ Thị Vân",           phone:"0986154065", role:"Chuyên viên Khách hàng ưu tiên cấp 4", team:"PGD Hào Nam", email:"vantt71@bidv.com.vn" },
 
-  { name:"Nguyễn Thị Ngọc Diệp", phone:"0986180686", role:"Phó Giám đốc PGD phụ trách kinh doanh", team:"PGD Nam Cao", email:"diepntn3@bidv.com.vn" },
+  { name:"Nguyễn Thị Thanh Nga", phone:"0986848363", role:"Phó Giám đốc Phòng Giao dịch phụ trách kinh doanh", team:"PGD Nam Cao", email:"ngantt25@bidv.com.vn" },
+  { name:"Nguyễn Thị Ngọc Diệp", phone:"0986180686", role:"Phó Giám đốc Phòng Giao dịch phụ trách kinh doanh", team:"PGD Nam Cao", email:"diepntn3@bidv.com.vn" },
   { name:"Nguyễn Trung Hiếu",    phone:"0967890866", role:"Chuyên viên Khách hàng ưu tiên cấp 2", team:"PGD Nam Cao", email:"hieunt35@bidv.com.vn" },
+  { name:"Trịnh Tuấn Anh",       phone:"0916133163", role:"Chuyên viên Khách hàng cá nhân cấp 1", team:"PGD Nam Cao", email:"anhtt26@bidv.com.vn" },
 
-  { name:"Phạm Thị Tuyết Mai",   phone:"0904377370", role:"Phó Giám đốc PGD phụ trách kinh doanh", team:"PGD Lương Định Của", email:"maiptt2@bidv.com.vn" },
+  { name:"Phạm Thị Tuyết Mai",   phone:"0904377370", role:"Phó Giám đốc Phòng Giao dịch phụ trách kinh doanh", team:"PGD Lương Định Của", email:"maiptt2@bidv.com.vn" },
   { name:"Vũ Hoài Phương",       phone:"0928252688", role:"Chuyên viên Khách hàng ưu tiên cấp 3", team:"PGD Lương Định Của", email:"phuongvh3@bidv.com.vn" },
   { name:"Phan Đức Trung",       phone:"0919463798", role:"Chuyên viên Khách hàng cá nhân cấp 2", team:"PGD Lương Định Của", email:"trungpd1@bidv.com.vn" },
 ];
